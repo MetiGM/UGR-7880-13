@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Home\fonts\Montserrat-Black.ttf);
+  }
+  @font-face {
+    font-family: Baserkville;
+    src: url(Home\fonts\LibreBaskerville-Regular.ttf);
+  }
+  @font-face {
+    font-family: Caudex;
+    src: url(Home\fonts\Caudex-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: Argent;
+    src: url(Home\fonts\Argent.otf);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: radial-gradient(circle, rgba(50,128,77,1) 6%, rgba(42,98,66,1) 30%, rgb(20, 20, 20) 98%);
+
+  }
+
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #edf0ee;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    width: 150px;
+  }
+
+  .nlinks {
+    flex: 1;
+    text-align: right;
+  }
+
+  .nlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+
+  .nlinks ul li a {
+    color: #686c58;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  .nlinks ul li a:hover::after {
+    width:100%;
+  }
+  .nlinks li a:hover {
+    color: #174029;
+    color: #fff;
+    box-sizing: content-box;
+    outline: none;
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+  .nlinks li a:visited {
+    font-style: italic;
+    color: #850404;
+
+  }
+  .nlinks li a:active {
+    color: #253a49;
+  }
+.first img {
+  max-width: 100%;
+  height: auto;
+}
+  .text {
+    font-family: Caudex;
+    font-size: 30px;
+    margin: 100px;
+    margin-bottom: 0px;
+    padding: 200px;
+    text-align: center;
+  }
+
+
+.main {
+  padding: 50px;
+  margin:auto
+}
+.main h2 {
+  font-size: 30px;
+  font-family: Montserrat;
+}
+.begin p {
+  padding: 150px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin: 100px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  font-family: Baserkville;
+}
+figcaption {
+  margin-left: 250px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+  .foot {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: transparent;
+    padding: 100px 0 30px;
+    font-size: 16px;
+    line-height: 20px;
+ }
+ .hold {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+ footer img {
+   width: 250px;
+ }
+ .col {
+   flex-basis: 25%;
+   padding: 20px;
+ }
+ .foot ul li {
+     list-style: none;
+     margin: 12px;
+ }
+
+ .foot ul li a {
+     text-decoration: none;
+     color: #764330;
+ }
+ .foot ul li a:hover {
+   text-decoration: underline;
+   color: #fff;
+   text-transform: uppercase;
+ }
+ .foot ul li a:visited {
+   text-decoration: none;
+   color: blue;
+ }
+ form {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+   margin-bottom: 50px;
+   border-bottom: 1px solid #ccc;
+ }
+ form .fa-solid {
+   font-size: 18px;
+   margin-right: 10px;
+ }
+ form input {
+   width: 100%;
+   background-color: transparent;
+   border: 0;
+   outline: none;
+   color: #fff;
+ }
+ form button .fa-solid {
+   background-color: transparent;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   font-size: 16px;
+ }

@@ -1,10 +1,10 @@
 @font-face {
     font-family: Montserrat;
-    src: url(Mammals\fonts\Montserrat-Black.ttf);
+    src: url(../fonts/Montserrat-Black.ttf);
   }
   @font-face {
     font-family: Baserkville;
-    src: url(Mammals\fonts\LibreBaskerville-Regular.ttf);
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
   }
 
   * {
@@ -13,13 +13,13 @@
   }
 
   body {
-    background: radial-gradient(circle, rgba(50,128,77,1) 6%, rgba(42,98,66,1) 30%, rgba(0,0,0,1) 98%);
+    background: radial-gradient(circle, rgba(50,128,77,1) 6%, rgba(42,98,66,1) 30%, rgba(0, 0, 0, 0.856) 98%);
   }
 
   .header {
     min-height: 100vh;
     width: 100%;
-    background-color: #174029;
+    background-color: rosybrown;
     position: relative;
   }
 
@@ -104,8 +104,10 @@
   text-align: center;
   font-family: Baserkville, sans-serif;
   padding: 50px;
-  color: #A68F7B;
-
+  color: #9c785b;
+}
+h2 {
+  margin: 10px 50px 0;
 }
 .cxcs {
   padding: 50px;
@@ -116,7 +118,8 @@
 .container {
   column-count: 3;
   display: flex;
-  column-gap: 25px;
+  flex-direction: row;
+  column-gap: 45px;
   align-items: center;
   padding: 100px;
 }
@@ -130,7 +133,8 @@ figcaption {
     position: relative;
     bottom: 0;
     background: transparent;
-    padding: 100px 0 30px;
+    padding: 30px 0 30px;
+    margin-top: 50px;
     font-size: 16px;
     line-height: 20px;
  }
@@ -175,7 +179,7 @@ figcaption {
    margin-bottom: 50px;
    border-bottom: 1px solid #ccc;
  }
- form .fa-solid {
+ form ion-icon {
    font-size: 18px;
    margin-right: 10px;
  }
@@ -186,10 +190,34 @@ figcaption {
    outline: none;
    color: #fff;
  }
- form button .fa-solid {
+ form button {
    background-color: transparent;
    border: 0;
    outline: none;
    cursor: pointer;
    font-size: 16px;
  }
+
+
+ @media screen and (max-width:768px) {
+
+  .hold {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .container {
+    column-count: 3;
+    column-gap: 45px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  }

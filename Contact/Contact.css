@@ -1,10 +1,10 @@
 @font-face {
   font-family: Montserrat;
-  src: url(Contact\fonts\Montserrat-Black.ttf);
+  src: url(../fonts/Montserrat-Black.ttf);
 }
 @font-face {
   font-family: Baserkville;
-  src: url(Contact\fonts\LibreBaskerville-Regular.ttf);
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
 }
 
 * {

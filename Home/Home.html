@@ -5,22 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="Home.css">
-  <script src="https://kit.fontawesome.com/c80abd48a2.js"></script>
+  <link rel="stylesheet" href="./Home.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="document.form1.text1.focus()">
 
   <header class="header">
-    <nav><a href="Home\Home.html"><img class="logo" src="Home\img\Logo.svg"></a>
+    <nav><a href="./Home.html"><img class="logo" src="../images/Logo.svg"></a>
       <section class="nlinks">
         <ul>
-          <li><a href="Home\Home.html">Home</a></li>
-          <li><a href="Birds\birds.html">Birds</a></li>
-          <li><a href="Mammals\mammals.html">Mammals</a></li>
-          <li><a href="Reptiles\reptiles.html">Reptiles</a></li>
-          <li><a href="About us\About.html">About</a></li>
-          <li><a href="Contact\Contact.html">Contact</a></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="../Reptiles/reptiles.html">Reptiles</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
 
         </ul>
       </section>
@@ -30,7 +30,7 @@
   <section class="images">
     <section class="first">
       <figure>
-        <img src="Home\img\lions.png" alt="lions" height="100%" width="100%">
+        <img src="../images/lions.png" alt="lions" height="100%" width="100%">
       </figure>
     </section>
   </section>
@@ -47,17 +47,17 @@
     <h2>Animals</h2>
     <section class="begin">
       <figure>
-        <a href="Birds\birds.html"><img src="Home\img\bird.jpg" width="650px" height="550px"></a>
+        <a href="../Birds/birds.html"><img src="../images/bird.jpg" width="500px" height="400px"></a>
         <figcaption>Parrot</figcaption>
       </figure>
 
       <p>Birds are a group of warm-blooded vertebrates constituting the class Aves, characterised by
         feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart,
         and a strong yet lightweight skeleton.</p>
-      </section>
+    </section>
     <section class="begin">
       <figure>
-        <a href="Reptiles\reptiles.html"><img src="Home\img\snake.jpg" width="650px" height="550px"></a>
+        <a href="../Reptiles/reptiles.html"><img src="../images/snake.jpg" width="500px" height="400px"></a>
         <figcaption>Snake</figcaption>
       </figure>
 
@@ -67,7 +67,7 @@
     </section>
     <section class="begin">
       <figure>
-        <a href="Mammals\mammals.html"><img src="Home\img\zebra.jpg" width="650px" height="550px"></a>
+        <a href="../Mammals/mammals.html"><img src="../images/zebra.jpg" width="500px" height="400px"></a>
         <figcaption>Zebra</figcaption>
       </figure>
 
@@ -87,32 +87,39 @@
   <footer class="foot">
     <section class="hold">
       <section class="col">
-        <a href="Home\Home.html"><img src="Home\img\Logo.svg" alt="logo"></a>
+        <a href="./Home.html"><img src="../images/Logo.svg" alt="logo"></a>
         <p>Conserve Nature's Bounty.</p>
         <p>&copy; Copyright Reserved.</p>
       </section>
       <section class="col">
         <h3>Site Links</h3>
         <ul>
-          <li><a href="Home\Home.html">Home</a></li>
-          <li><a href="Birds\birds.html">Birds</a></li>
-          <li><a href="Reptiles\reptiles.html">Reptiles</a></li>
-          <li><a href="Mammals\mammals.html">Mammals</a></li>
-          <li><a href="About us\About.html">About</a></li>
-          <li><a href="Contact\Contact.html">Contact</a></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="../Reptiles/reptiles.html">Reptiles</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
         </ul>
       </section>
-      <section class="col">
-        <h4>Signup</h4>
-        <form>
-          <i class="fa-solid fa-inbox"></i>
-          <input type="email" placeholder="Email">
-          <button type="submit"><i class="fa-solid fa-check"></i></button>
+      <section class="col" id="validate">
+        <h4>Newsletter Signup</h4>
+        <form class="form" method="get" name="validate">
+          <ion-icon name="mail" id="mail-icon"></ion-icon>
+          <div class="input">
+            <input type="text" placeholder="Email" name="email" class="email">
+            <button type="submit" onclick="ValidateEmail(document.form1.text1)"><ion-icon
+                name="arrow-round-forward"></ion-icon></button>
+          </div>
+          <div class="valid">Thank you for signing up!</div>
         </form>
 
       </section>
     </section>
   </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./signup.js"></script>
 
 </body>
 

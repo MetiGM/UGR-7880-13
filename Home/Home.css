@@ -1,18 +1,18 @@
 @font-face {
     font-family: Montserrat;
-    src: url(Home\fonts\Montserrat-Black.ttf);
+    src: url(../fonts/Montserrat-Black.ttf);
   }
   @font-face {
     font-family: Baserkville;
-    src: url(Home\fonts\LibreBaskerville-Regular.ttf);
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
   }
   @font-face {
     font-family: Caudex;
-    src: url(Home\fonts\Caudex-BoldItalic.ttf);
+    src: url(../fonts/Caudex-BoldItalic.ttf);
   }
   @font-face {
     font-family: Argent;
-    src: url(Home\fonts\Argent.otf);
+    src: url(../fonts/Argent.otf);
   }
 
   * {
@@ -26,10 +26,10 @@
   }
 
   .header {
-    min-height: 100vh;
+    height: 150px;
     width: 100%;
-    background-color: #edf0ee;
     position: relative;
+    background-color:  rgb(20, 20, 20);
   }
 
   nav {
@@ -56,7 +56,7 @@
   }
 
   .nlinks ul li a {
-    color: #686c58;
+    color: #544236;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -90,41 +90,58 @@
 
   .nlinks li a:visited {
     font-style: italic;
-    color: #850404;
+    color: #cdab48;
 
   }
   .nlinks li a:active {
-    color: #253a49;
+    color: red;
   }
 .first img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
   .text {
     font-family: Caudex;
-    font-size: 30px;
-    margin: 100px;
+    font-size: 24px;
+    margin: 50px;
     margin-bottom: 0px;
-    padding: 200px;
+    padding: 100px;
     text-align: center;
   }
 
 
 .main {
+  position: relative;
   padding: 50px;
-  margin:auto
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .main h2 {
-  font-size: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
   font-family: Montserrat;
 }
+.begin {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.begin img {
+  padding: 10px;
+  margin: 10px;
+}
 .begin p {
-  padding: 150px;
+  position: relative;
+  padding: 20px;
   padding-top: 0px;
   padding-bottom: 10px;
-  margin: 100px;
+  margin: 10px;
+  margin-bottom: 50px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   font-size: 18px;
   font-family: Baserkville;
 }
@@ -138,10 +155,10 @@ figcaption {
     width: 100%;
     position: relative;
     bottom: 0;
-    background: transparent;
-    padding: 100px 0 30px;
+    padding: 30px 0 30px;
     font-size: 16px;
-    line-height: 20px;
+    background-color:  rgb(20, 20, 20);
+    
  }
  .hold {
    width: 80%;
@@ -165,7 +182,7 @@ figcaption {
 
  .foot ul li a {
      text-decoration: none;
-     color: #764330;
+     color: #544236;
  }
  .foot ul li a:hover {
    text-decoration: underline;
@@ -174,8 +191,24 @@ figcaption {
  }
  .foot ul li a:visited {
    text-decoration: none;
-   color: blue;
+   color: #cdab48;
  }
+ #validate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+ } 
+#validate h1 {
+ font-size: 32px
+}
+#validate p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
  form {
    display: flex;
    align-items: center;
@@ -184,7 +217,7 @@ figcaption {
    margin-bottom: 50px;
    border-bottom: 1px solid #ccc;
  }
- form .fa-solid {
+ form ion-icon {
    font-size: 18px;
    margin-right: 10px;
  }
@@ -195,10 +228,97 @@ figcaption {
    outline: none;
    color: #fff;
  }
- form button .fa-solid {
+ form button{
    background-color: transparent;
    border: 0;
    outline: none;
    cursor: pointer;
    font-size: 16px;
  }
+ form button:hover {
+  color: rgba(250, 247, 247, 0.144);
+  cursor: pointer;
+ }
+
+@media screen and (max-width:320px) {
+  body {
+    background: radial-gradient(circle, rgba(50,128,77,1) 6%, rgba(42,98,66,1) 30%, rgb(20, 20, 20) 98%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header {
+  height: 150px;
+  width: 550px;
+  position: relative;
+  background-color: rgb(20, 20, 20);
+}
+.first img {
+  width: 92%;
+  height: auto;
+}
+.main {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.foot {
+  width: 170%;
+  position: relative;
+  bottom: 0;
+  padding: 30px 0 30px;
+  font-size: 16px;
+  background-color: rgb(20, 20, 20);
+}
+}
+@media screen and (max-width:768px) {
+  .begin p {
+    position: relative;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Baserkville;
+}
+.hold {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#validate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+}
+@media screen and (max-width:1200px) {
+  .begin p {
+    position: relative;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Baserkville;
+}
+}

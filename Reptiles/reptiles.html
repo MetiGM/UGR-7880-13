@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <title>Reptiles</title>
-  <link rel="stylesheet" href="reptiles.css">
-  <script src="https://kit.fontawesome.com/c80abd48a2.js"></script>
+  <link rel="stylesheet" href="./reptiles.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header classs="header">
-    <nav><a href="Home\Home.html"><img class="logo" src="Reptiles\img\Logo.svg"></a>
+    <nav><a href="../Home/Home.html"><img class="logo" src="../images/Logo.svg"></a>
       <section class="nlinks">
         <ul>
-          <li><a href="Home\Home.html">Home</a></li>
-          <li><a href="Birds\birds.html">Birds</a></li>
-          <li><a href="Mammals\mammals.html">Mammals</a></li>
-          <li><a href="Reptiles\reptiles.html">Reptiles</a></li>
-          <li><a href="About us\About.html">About</a></li>
-          <li><a href="Contact\Contact.html">Contact</a></li>
+          <li><a href="../Home/Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="./reptiles.html">Reptiles</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
 
         </ul>
       </section>
@@ -102,7 +102,7 @@
       <li>
         <h3>Squamata</h3>
         <figure>
-          <img src="Reptiles\img\snake.jpg" alt="snake" width="300px" height="200px">
+          <img src="../images/snake.jpg" alt="snake" width="300px" height="200px">
           <figcaption>Snake</figcaption>
         </figure>
         <p>The word Squamata originates from the Latin meaning “having scales“. This reptile order contains worm lizards (aka amphisbaenians), lizards, and snakes. According to May 2021 statistics, about 71 families and over 11,500 reptile species were identified and classified under Squamata.</p>
@@ -111,7 +111,7 @@
       <li>
         <h3>Testudines</h3>
         <figure>
-          <img src="Reptiles\img\turtle.jpg" alt="turtle" width="300px" height="200px">
+          <img src="../images/turtle.jpg" alt="turtle" width="300px" height="200px">
           <figcaption>Turtle</figcaption>
         </figure>
         <p>Chelonia is an alternate name for Testudines. The word ‘Testudines‘ is based on the Latin word for tortoise – testudo. This reptile order contains turtles, terrapins, and tortoises. All species under this order have a hard carapace (cartilaginous shell) covering their bodies. There are 14 families and 335 species of reptiles classified under this reptile order.</p>
@@ -120,7 +120,7 @@
       <li>
         <h3>Crocodilia</h3>
         <figure>
-          <img src="Reptiles\img\croc.jpg" alt="croc" width="300px" height="200px">
+          <img src="../images/croc.jpg" alt="Crocodile" width="300px" height="200px">
           <figcaption>Crocodile</figcaption>
         </figure>
         <p>As the name indicates, this reptile order contains reptiles such as crocodiles, alligators, caimans, and gavials. These mostly giant, predatory, semiaquatic reptiles are also known as crocodilians. They first appeared about 95 million years ago in the Late Cretaceous period and are the closest relatives to birds. There are three different families and 23 different species listed under Crocodilia.</p>
@@ -129,7 +129,7 @@
       <li>
         <h3>Rhynchocephalia</h3>
         <figure>
-          <img src="Reptiles\img\lizard.jpg" alt="lizard" width="300px" height="200px">
+          <img src="../images/lizard.jpg" alt="lizard" width="300px" height="200px">
           <figcaption>Lizard</figcaption>
         </figure>
         <p>This reptile order contains just one family and only one living species named Tuataras, and they are endemic to New Zealand. The oldest fossil recording of this reptile goes back to the Middle Triassic, around 240 million years ago. Most reptiles in this order are extinct now. Albert Günther of England, in 1867, proposed this reptile order Rhynchocephalia (means “beak head“) for the Tuatara and their fossil counterparts after observing its features similar to birds, turtles, and crocodiles.</p>
@@ -141,32 +141,33 @@
   <footer class="foot">
     <section class="hold">
       <section class="col">
-        <a href="Home\Home.html"><img src="Reptiles\img\Logo.svg" alt="logo"></a>
+        <a href="../Home/Home.html"><img src="../images/Logo.svg" alt="logo"></a>
         <p>Conserve Nature's Bounty.</p>
         <p>&copy; Copyright Reserved.</p>
       </section>
       <section class="col">
         <h3>Site Links</h3>
         <ul>
-          <li><a href="Home\Home.html">Home</a></li>
-          <li><a href="Birds\birds.html">Birds</a></li>
-          <li><a href="Reptiles\reptiles.html">Reptiles</a></li>
-          <li><a href="Mammals\mammals.html">Mammals</a></li>
-          <li><a href="About us\About.html">About</a></li>
-          <li><a href="Contact\Contact.html">Contact</a></li>
+          <li><a href="../Home/Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="./reptiles.html">Reptiles</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
         </ul>
       </section>
       <section class="col">
-        <h4>Signup</h4>
-        <form>
-          <i class="fa-solid fa-inbox"></i>
-          <input type="email" placeholder="Email">
-          <button type="submit"><i class="fa-solid fa-check"></i></button>
-        </form>
+        <h4>Newsletter Signup</h4>
+          <form>
+            <ion-icon name="mail"></ion-icon>
+            <input type="email" placeholder="Email">
+            <button type="submit"><ion-icon name="arrow-round-forward"></ion-icon></button>
+          </form>
 
       </section>
     </section>
   </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>

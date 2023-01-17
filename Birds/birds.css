@@ -1,16 +1,16 @@
 @font-face {
   font-family: Montserrat;
-  src: url(Birds\fonts\Montserrat-Black.ttf);
+  src: url(../fonts/Montserrat-Black.ttf);
 }
 
 @font-face {
   font-family: Baserkville;
-  src: url(Birds\fonts\LibreBaskerville-Regular.ttf);
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
 }
 
 @font-face {
   font-family: Inconsolata;
-  src: url(Birds\fonts\Inconsolata_Expanded-Medium.ttf);
+  src: url(../fonts/Inconsolata_Expanded-Medium.ttf);
 }
 
 * {
@@ -20,12 +20,16 @@
 
 body {
   background: radial-gradient(circle, rgb(237, 253, 6) 6%, rgb(224, 168, 12) 30%, rgb(231, 8, 8) 98%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   min-height: 100vh;
   width: 100%;
-  background-color: #174029;
   position: relative;
 }
 
@@ -110,7 +114,6 @@ nav img {
   font-family: Baskerville;
   font-size: 16px;
   color: #0a0a0a;
-
   line-height: 1.3;
   word-spacing: 2px;
   text-align: justify;
@@ -237,7 +240,7 @@ form {
   border-bottom: 1px solid #ccc;
 }
 
-form .fa-solid {
+form ion-icon {
   font-size: 18px;
   margin-right: 10px;
 }
@@ -250,7 +253,7 @@ form input {
   color: #fff;
 }
 
-form button .fa-solid {
+form button {
   background-color: transparent;
   border: 0;
   outline: none;
